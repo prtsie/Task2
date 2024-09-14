@@ -51,7 +51,7 @@ fun getNum(): Int {
     while (true) {
         print("Enter num >>> ")
         val input = readln().toIntOrNull()
-        if (input == null || input <= 0 || input > 999) {
+        if (input == null || input <= 99 || input > 999) {
             println("Columns count must be a positive number and less than 1000")
         } else {
             return input
